@@ -61,6 +61,20 @@ Moved to `Live reloading and SASS compilation`_.
 
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
 
+Create a new app
+^^^^^^^^^^^^^^^^
+
+Using the startapp tash will not work due to the project structure. In order to create an app you have to
+
+1 - create the <name-of-the-app> app with python manage.py startapp
+2 - move <name-of-the-app> directory to <project_slug> directory
+3 - edit <project_slug>/<name-of-the-app>/apps.py and
+change name = "<name-of-the-app>" to name = "<project_slug>.<name-of-the-app>"
+4 - add "<project_slug>.<name-of-the-app>.apps.<NameOfTheAppConfigClass>", on
+your LOCAL_APPS on config/settings/base.py
+
+
+For more information see : https://github.com/pydanny/cookiecutter-django/issues/1725
 
 
 Celery
