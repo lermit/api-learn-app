@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static i18n %}
+{% block title %}Monitored websites{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2>Websites</h2>
+
+  <div class="list-group">
+    <ul>
+    {% for object in object_list.all %}
+      <li>{{ object }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock content %}
