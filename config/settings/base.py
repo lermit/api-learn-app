@@ -71,6 +71,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'pockost_monitoring.users.apps.UsersAppConfig',
     'pockost_monitoring.ssl_monitor.apps.SslMonitorConfig',
+    'pockost_monitoring.api.apps.ApiConfig',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

@@ -10,7 +10,7 @@ class SSLWebsite(models.Model):
     # Website URL
     # TODO : Have a validator for domain+port
     # URLField alway append a http:// prefix
-    url = models.CharField(max_length=200)
+    domain = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.url
+        return self.domain

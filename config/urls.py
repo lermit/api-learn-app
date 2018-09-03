@@ -25,6 +25,10 @@ urlpatterns = [
         "ssl_monitor/",
         include("pockost_monitoring.ssl_monitor.urls"),
     ),
+    path(
+        "api/",
+        include("pockost_monitoring.api.urls"),
+    ),
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 )
