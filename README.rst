@@ -76,6 +76,13 @@ your LOCAL_APPS on config/settings/base.py
 
 For more information see : https://github.com/pydanny/cookiecutter-django/issues/1725
 
+Execute manage.py with docker
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Using docker exec will not work because of the method used to load configuration with env var. You have to create a new container to do that.
+
+  $ docker-compose -f local.yml run -u $( id -u ) --rm django python manage.py <task>
+
 
 Celery
 ^^^^^^
