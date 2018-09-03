@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=pockost_monitoring
+POSTGRES_USER=LSKxUqyEEcEaYLRlYwCYYDLMwHeMIEtU
+POSTGRES_PASSWORD=LL1UElxXfBTq3u7N2dikfNVCznJQ5Mym1HW8p9uch79oJRhXiClPZwDgrL8qcXoL
